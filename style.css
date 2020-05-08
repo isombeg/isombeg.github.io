@@ -1,0 +1,268 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic);
+
+body {
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/201958/zen-lake-boat.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+/* @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+} */
+
+/* Animations */
+
+    /* SlideInLeft */
+@-webkit-keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+}
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+  
+@keyframes slideInLeft {
+    from {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+  
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+}
+
+.typewriter p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /*Gives that scrolling effect as the typing happens*/
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+section.cover {
+    padding-top: 70px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+/* section.cover .media { 
+    background-color: rgba(120, 155, 119, 0.9);
+    padding: 15px;
+} */
+
+section.cover img {
+    border: 10px solid #ddd;
+    width: 30%;
+    height: auto;
+}
+
+section.cover .media-body {
+    text-align: end;
+}
+
+
+/* Nav / Navbar Styles
+===================================*/
+.navbar {
+	background: transparent;
+	border-bottom: none;
+	
+	transition-duration: 0.6s;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav>li>a {
+	color: #183532;
+}
+.navbar-light .navbar-nav>li {
+	margin-right: 8px;
+}
+.navbar-light .navbar-nav>li:last-of-type {
+	margin-right: 0;
+}
+ .dropdown-menu,
+.navbar-light .navbar-nav>li>a:hover,
+.navbar-light .navbar-nav>.active>a,
+.navbar-light .navbar-nav>.active>a:hover,
+.navbar-light .navbar-nav>.active>a:focus,
+.navbar-light .navbar-nav>.open>a, 
+.navbar-light .navbar-nav>.open>a:hover,
+.navbar-light .navbar-nav>.open>a:focus {
+	background: rgba(24, 53, 50, 0.1);
+}
+
+.navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background: #fff;
+}
+
+
+/* .cover .jumbotron {
+	align-self: center;
+	background: transparent;
+	color: #ffffff;
+	text-align: center;
+	width: 90%;
+} */
+
+
+#work-xp {
+    background-color: rgba(119, 155, 154, 0.95);
+    min-block-size: 100vh;
+}
+
+#work-xp > .container > .container, 
+#work-xp > .container > .container > ul{
+    display: grid;
+    grid-gap: 20px;
+}
+
+#work-xp .media {
+    background-color: #eeeeee;
+    padding: 15px;
+    color: #333333;
+    border-radius: 5px;
+}
+
+#media-body li{
+    padding: 0;
+}
+
+#pdsb {
+    text-align: end;
+}
+
+#work-xp > .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Projects layout and styles */
+
+#projects{
+    background-color: rgba(119, 138, 155, 0.95);
+    block-size: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#projects > .container{
+    min-height: 100vh;
+    align-items: center;
+    padding: 1vh 0;
+}
+
+#projects .display-3 {
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+.carousel .carousel-item {
+    height: 79vh;
+}
+  
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 79vh;
+}
+
+#resume-download{
+    background-color: rgba(119, 120, 155, 0.95);
+    min-block-size: 100vh;
+}
+
+.block{
+    color: #ffffff;
+}
+
+.card {
+    color: #333333;
+}
+
+#projects .card {
+    max-width: 300px;
+    min-width: 150px;
+    margin: 15px 15px 15px 15px;
+    border-color: rgba(119, 138, 155, 0.95);
+    padding: 0px 0px 0px 0px;
+    transition: all 0.3s linear;
+}
+
+#projects .card:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+#work-xp li, 
+#projects li{
+    list-style-type: none;
+    
+}
+
+#resume-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resume-header-div {
+    text-align: center;
+}
+
+/* jQuery Styles
+=================================== */
+.navbar-scroll {
+	background: #ffffff;
+	padding: 0;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+	transition-duration: 0.6s;
+}

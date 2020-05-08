@@ -1,0 +1,15 @@
+<p class="tech-used">C, Matlab, Esduino Xtreme</p>
+<p class="project-description">Embedded prototype to acquire angle data, process the data, and transmit the data for display and recording.</p>
+
+<p class="tech-used">Python (Tkinter, PySerial), Simulink</p>
+<p class="project-description">Robust, safety-critical embedded software based on Boston Scientific documentation and pacemaker theory. Interfaces with GUI on a given computer through serial communication.</p>
+                
+<p class="tech-used">C++ (Arduino)</p>
+<p class="project-description">Software for diagnostics, hardware control and behavioral logic of a sumobot. Earned 8th of 24 teams at McMaster's Beginner Sumobot Competition.</p>
+
+<p class="tech-used">C (Arduino)</p>
+<p class="project-description">Device capable of decoding Morse code input through a button.</p>
+
+<p class="tech-used">C, Java, Git</p>
+<p class="project-description">Repository containing solutions to McMaster's CE2SH4 (Principles of Programming) lab preparation exercises. Used by multiple peers for consultation and studying.</p>
+                                
