@@ -1,23 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic);
 
 body {
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/201958/zen-lake-boat.jpg');
+    /* background-image: url('./Waihou.png'); */
+    background-image: url('https://media.giphy.com/media/3Z1b8Z5ESU2fgScGab/giphy.gif');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-  }
+}
 
-/* @keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-} */
 
 /* Animations */
 
@@ -54,7 +44,7 @@ body {
     animation-duration: 2s;
 }
 
-.typewriter p {
+.typewriter{
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
@@ -85,7 +75,8 @@ section.cover {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: black;
+    font-weight: 900;
 }
 
 /* section.cover .media { 
@@ -93,9 +84,14 @@ section.cover {
     padding: 15px;
 } */
 
+section.cover .media{
+    width: 80vw;
+}
+
 section.cover img {
     border: 10px solid #ddd;
     width: 30%;
+    padding: 0;
     height: auto;
 }
 
@@ -151,8 +147,12 @@ section.cover .media-body {
 
 
 #work-xp {
-    background-color: rgba(119, 155, 154, 0.95);
+    background-color: rgba(119, 155, 154, 0.50);
     min-block-size: 100vh;
+}
+
+#work-xp h2 {
+    font-weight: bolder;
 }
 
 #work-xp > .container > .container, 
@@ -185,7 +185,7 @@ section.cover .media-body {
 /* Projects layout and styles */
 
 #projects{
-    background-color: rgba(119, 138, 155, 0.95);
+    background-color: rgba(119, 138, 155, 0.50);
     block-size: 100vh;
     padding: 0;
     margin: 0;
@@ -200,6 +200,8 @@ section.cover .media-body {
 #projects .display-3 {
     margin-top: 2vh;
     margin-bottom: 4vh;
+    color: white;
+    font-weight: bolder;
 }
 
 .carousel .carousel-item {
@@ -210,7 +212,14 @@ section.cover .media-body {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* max-width: 100%;
+    width: 100%;
+    display: block;
     min-height: 79vh;
+    height: auto; */
 }
 
 #resume-download{
