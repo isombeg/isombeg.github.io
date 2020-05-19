@@ -116,39 +116,15 @@ section.cover .media-body {
 
 /* Nav / Navbar Styles
 ===================================*/
-.navbar {
-	background: transparent;
-	border-bottom: none;
-	
-	transition-duration: 0.6s;
+.bg-custom{
+    background-color: transparent;
+    transition: 750ms ease;
 }
 
-.navbar-light .navbar-brand,
-.navbar-light .navbar-nav>li>a {
-	color: #183532;
-}
-.navbar-light .navbar-nav>li {
-	margin-right: 8px;
-}
-.navbar-light .navbar-nav>li:last-of-type {
-	margin-right: 0;
-}
- .dropdown-menu,
-.navbar-light .navbar-nav>li>a:hover,
-.navbar-light .navbar-nav>.active>a,
-.navbar-light .navbar-nav>.active>a:hover,
-.navbar-light .navbar-nav>.active>a:focus,
-.navbar-light .navbar-nav>.open>a, 
-.navbar-light .navbar-nav>.open>a:hover,
-.navbar-light .navbar-nav>.open>a:focus {
-	background: rgba(24, 53, 50, 0.1);
+.bg-custom.scrolled{
+    background-color: #f0f5f7;
 }
 
-.navbar-toggle,
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
-	background: #fff;
-}
 
 /* Section stylings */
 /* #projects,
@@ -287,11 +263,28 @@ section.cover .media-body {
     text-align: center;
 }
 
-/* jQuery Styles
-=================================== */
-.navbar-scroll {
-	background: #ffffff;
-	padding: 0;
-	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
-	transition-duration: 0.6s;
+footer {
+    background-color: rgba(218, 247, 166, 0.9);
+    block-size: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw;
+}
+
+footer i {
+    color: white;
+}
+
+#icon-github {
+    margin-right: 5vw;
+}
+
+#icon-linkedin {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#icon-email {
+    margin-left: 5vw;
 }
