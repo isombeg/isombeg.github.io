@@ -1,0 +1,20 @@
+extends ../layouts/main-layout.pug
+
+block pageTitle 
+    title Guy-Jacques Isombe
+
+block content
+    section.cover(id="intro spytop")
+        .media
+            img.align-self-center.mr-3.slideInLeft(src="images/avatar1.jpg", alt="Image of Guy-Jacques")
+            .media-body
+                h1.mt-0.display-1.block Guy-Jacques Isombe
+                h4.typewriter.block Future engineer eager to build empowering solutions 
+
+    include ../includes/projects.pug
+    include ../includes/workXps.pug
+    include ../includes/resume.pug
+
+block contact-footer 
+    include ../includes/large-contact.pug
+           

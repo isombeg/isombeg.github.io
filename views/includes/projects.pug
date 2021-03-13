@@ -1,0 +1,40 @@
+section.block(id='projects')
+    .container 
+        .container-fluid 
+            h2.display-3 Projects 
+        .carousel.slide.block(id='projects-carousel', data-ride='carousel')
+            ol.carousel-indicators 
+                - let projIndex = 0
+                while projIndex < projects.length
+                    li(
+                        data-target='#projects-carousel',
+                        data-slide-to=projIndex,
+                        class=(projIndex ? '' : 'active')
+                    )
+                    - projIndex++
+            .carousel-inner
+                - projIndex = 0
+                while projIndex < projects.length
+                    .carousel-item(class=(projIndex ? '' : 'active'))
+                        .a(href=projects[projIndex].repoUrl)
+                            img.d-block.w-100(src=projects[projIndex].imagePath, alt=projects[projIndex].title)
+                            .carousel-caption.d-none.d-md-block 
+                                h5 #{projects[projIndex].title}
+                                p.tech-used #{projects[projIndex].techStack}
+                                p.project-description #{projects[projIndex].description}
+                    - projIndex++
+            a.carousel-control-prev(
+                href='#projects-carousel',
+                role='button',
+                data-slide='prev'
+            )
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.sr-only Previous
+
+            a.carousel-control-next(
+                href="#projects-carousel",
+                role="button",
+                data-slide="next"
+            )
+                span.carousel-control-next-icon(aria-hidden="true")
+                span.r-only 

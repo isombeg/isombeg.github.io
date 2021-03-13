@@ -1,0 +1,17 @@
+section.block(id='work-xp')
+    .container 
+        .container 
+            .container 
+                h2.display-3 Work Experience 
+            
+            ul 
+                each xp in experiences 
+                    li.block 
+                        .media 
+                            img.mr-3(alt=xp.company + ' Logo', src=xp.imgSrc)
+                            .media-body 
+                                h3.display-4.mt-0 #{xp.title}
+                                p.lead #{xp.company} (#{xp.location})
+                            ul 
+                                each p in xp.points 
+                                    li #{p}

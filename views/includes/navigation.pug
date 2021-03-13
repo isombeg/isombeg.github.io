@@ -1,0 +1,24 @@
+nav.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-custom(id="menu myScrollspy")
+    a.navbar-brand(href="/index") Guy-Jacques Isombe
+    button.navbar-toggler(
+        type="button",
+        data-toggle="collapse",
+        data-target="#navbarNav",
+        aria-controls="navbarNav",
+        aria-expanded="false",
+        aria-label="Toggle navigation"
+    )
+        span.navbar-toggler-icon
+    
+    // HREFS must lead back to index.pug sections
+    .collapse.navbar-collapse(id="navbarNav")
+        ul.navbar-nav
+            li.nav-item
+                a.nav-link(href="/#projects") Projects
+            li.nav-item
+                a.nav-link(href="/#work-xp") Work Experience 
+                    span.sr-only (current)
+            li.nav-item
+                a.nav-link(href="/#resume-download") Resume
+            li.nav-item
+                a.nav-link(href="/#contact") Contact

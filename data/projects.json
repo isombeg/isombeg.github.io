@@ -1,0 +1,16 @@
+[
+    {
+        "title": "CPUL8R: Pacemaker with PC Interface",
+        "techStack": "Python (Tkinter, PySerial), Simulink",
+        "description": "Robust, safety-critical embedded software based on Boston Scientific documentation and pacemaker theory. Interfaces with GUI on a given computer through serial communication.",
+        "imagePath": "/project_logos/pacemaker.JPG",
+        "repoUrl": ""
+    },
+    {
+        "title": "Robofriends",
+        "techStack": "JavaScript: React.js",
+        "description": "Dynamic web directory of friends’ contacts complete with realtime search functionality",
+        "imagePath": "/project_logos/robofriends.JPG",
+        "repoUrl": "https://isombeg.github.io/robofriends/"
+    }
+]
